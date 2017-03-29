@@ -22,7 +22,7 @@ public class ProcessTestCoveragePlugin implements ProcessEnginePlugin {
 
   @Override
   public void postProcessEngineBuild(ProcessEngine processEngine) {
-
+    ProcessTestCoverageEnabledEngine.processEngine = processEngine;
   }
 
 }
